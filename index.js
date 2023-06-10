@@ -22,7 +22,7 @@ app.use("/", Route);
 const DB_USER = process.env.DBUSER;
 const DB_PWD = process.env.DBPWD;
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, async ()=>{
     console.log(`Sever is running at: http://localhost:${PORT}`);
